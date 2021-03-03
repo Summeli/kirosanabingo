@@ -41,7 +41,7 @@ code {
 .pressedGameButton::after{
   z-index: 2;
   position: absolute;
-  margin-left: -60px;
+  margin-left: -100px;
   margin-top: -20px;
   content: 'X';
   background: transparent;
@@ -51,7 +51,7 @@ code {
   text-decoration: none;
   display: inline-block;
   font-size: 50px;
-  width: 50px;
+  width: 150px;
   height: 10px;
 }
 
