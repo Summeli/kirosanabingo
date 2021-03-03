@@ -23,9 +23,9 @@ export class GameButton extends Component<Props, ButtonState> {
     }
     
     render() {
-      return <button className='gamebutton' onClick={this.handleClick}>
-        {this.props.text}
-        if(this.state.isToggleOn){<div id='clickeButton'>X</div>}
+      return <button onClick={this.handleClick}
+        className= {this.state.isPressed ? "pressedGameButton" : "notPressedGamebutton"} 
+      >{this.props.text} 
       </button>
     }
   }

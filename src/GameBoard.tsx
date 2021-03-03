@@ -16,19 +16,19 @@ class GameBoard extends React.Component {
         return(
             <div>
             <div className="board-row">
-              {this.renderGameButton("kissa")}
-              {this.renderGameButton("koira")}
-              {this.renderGameButton("test")}
+              {this.renderGameButton("Vittu")}
+              {this.renderGameButton("Jumalauta")}
+              {this.renderGameButton("Perhana")}
             </div>
             <div className="board-row">
-              {this.renderGameButton("jee")}
-              {this.renderGameButton("jou")}
-              {this.renderGameButton("apina")}
+              {this.renderGameButton("Saatana")}
+              {this.renderGameButton("Hitsit")}
+              {this.renderGameButton("Kulli")}
             </div>
             <div className="board-row">
-              {this.renderGameButton("homo")}
-              {this.renderGameButton("perse")}
-              {this.renderGameButton("vbitsit")}
+              {this.renderGameButton("Hitto")}
+              {this.renderGameButton("Perse")}
+              {this.renderGameButton("Perkele")}
             </div>
           </div>
         );
