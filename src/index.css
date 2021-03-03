@@ -11,3 +11,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.gamebutton{
+  z-index: 1;
+  background: rgb(0,0,0);
+  color: rgb(247, 214, 72);
+  font: poppins;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 150px;
+  height: 70px;
+}
+
+.clickedButton {
+  z-index: 2;
+  color: rgb(247, 214, 72);
+  font: poppins-bold;
+  font-size: 20;
+}
