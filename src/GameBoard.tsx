@@ -19,8 +19,7 @@ class GameBoard extends React.Component<{},BoardState> {
     //Randomize cursewords into the stateobject
     for(let i=0; i<9; i++){
       let rndPos: number = Math.floor(Math.random() * Math.floor(this.cursewords.length));
-      console.log(this.cursewords[rndPos]);
-      this.state.rcursewords[i] = this.cursewords[rndPos]
+      this.state.rcursewords[i] = this.cursewords[rndPos];
       this.cursewords.splice(rndPos,1);
     }
   }

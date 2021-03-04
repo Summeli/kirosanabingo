@@ -14,8 +14,10 @@ code {
 
 .notPressedGamebutton{
   z-index: 1;
+  border-color: rgb(255, 255, 255);
   background: rgb(0,0,0);
   color: rgb(255, 255, 255);
+  outline: none;
   font: poppins;
   text-align: center;
   text-decoration: none;
@@ -27,8 +29,10 @@ code {
 
 .pressedGameButton{
   z-index: 1;
+  border-color: rgb(255, 255, 255);
   background: rgb(0,0,0);
   color: rgb(255, 255, 255);
+  outline: none;
   font: poppins;
   text-align: center;
   text-decoration: none;
@@ -49,7 +53,7 @@ code {
   font: poppins-bold;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  display: inline-table;
   font-size: 50px;
   width: 150px;
   height: 10px;
