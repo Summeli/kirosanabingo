@@ -1,4 +1,4 @@
-import React, { Component, MouseEvent } from 'react';
+import React, { Component, MouseEvent, useState } from 'react';
 
 interface Props {
     text: string
@@ -15,7 +15,8 @@ export class GameButton extends Component<Props, ButtonState> {
 
     // This binding is necessary to make `this` work in the callback
     this.handleClick = this.handleClick.bind(this);
-}
+  }
+  
     handleClick(event: MouseEvent) {
       this.setState(state => ({
         isPressed: !state.isPressed
