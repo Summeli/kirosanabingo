@@ -39,11 +39,12 @@ class GameBoard extends React.Component<{},BoardState> {
     }));
   }
 
-  renderGameButton(id: number){
+  renderGameButton(i: number){
       return (
           <GameButton
-            text={this.state.rcursewords[id]} isClicked={this.state.clickedButtons[id]} 
-            onClick = {() => this.handleClick(id)}
+            text={this.state.rcursewords[i]} isClicked={this.state.clickedButtons[i]} 
+            id = {i}
+            onClick = {() => this.handleClick(i)}
           />
         );
   }
