@@ -1,31 +1,20 @@
 import React, { Component, MouseEvent, useState } from 'react';
 
 interface Props {
-    text: string
-}
-interface ButtonState {
-  isPressed: boolean
+    text: string;
+    isClicked: boolean;
+    onClick: (ev: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
-export class GameButton extends Component<Props, ButtonState> {
+export class GameButton extends Component<Props> {
 
   constructor(props: Props) {
     super(props);
-    this.state = {isPressed: false};
-
-    // This binding is necessary to make `this` work in the callback
-    this.handleClick = this.handleClick.bind(this);
   }
-  
-    handleClick(event: MouseEvent) {
-      this.setState(state => ({
-        isPressed: !state.isPressed
-      }));
-    }
     
     render() {
-      return <button onClick={this.handleClick}
-        className= {this.state.isPressed ? "pressedGameButton" : "notPressedGamebutton"} 
+      return <button onClick = {this.props.onClick}
+        className= {this.props.isClicked ? "pressedGameButton" : "notPressedGamebutton"} 
       >{this.props.text} 
       </button>
     }
