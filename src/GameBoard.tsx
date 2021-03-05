@@ -49,49 +49,49 @@ class GameBoard extends React.Component<{},BoardState> {
         );
   }
 
-render() {
-    return(
-        <div>
+  render() {
+      return(
+          <div>
+          <div className="board-row">
+          {this.renderGameButton(0)}
+          {this.renderGameButton(1)}
+          {this.renderGameButton(2)}
+        </div>
         <div className="board-row">
-        {this.renderGameButton(0)}
-        {this.renderGameButton(1)}
-        {this.renderGameButton(2)}
+          {this.renderGameButton(3)}
+          {this.renderGameButton(4)}
+          {this.renderGameButton(5)}
+        </div>
+        <div className="board-row">
+          {this.renderGameButton(6)}
+          {this.renderGameButton(7)}
+          {this.renderGameButton(8)}
+        </div>
+        <p> {this.state.isBingo? "bingo" : "ei ole"}</p>
       </div>
-      <div className="board-row">
-        {this.renderGameButton(3)}
-        {this.renderGameButton(4)}
-        {this.renderGameButton(5)}
-      </div>
-      <div className="board-row">
-        {this.renderGameButton(6)}
-        {this.renderGameButton(7)}
-        {this.renderGameButton(8)}
-      </div>
-      <p> {this.state.isBingo? "bingo" : "ei ole"}</p>
-    </div>
-  );
-}
-  
-isBingo(clickedButons: Array<boolean>): boolean {
-  if(clickedButons[0] && clickedButons[1] && clickedButons[2]){
-    return true;
-  }else if(clickedButons[3] && clickedButons[4] && clickedButons[5]){
-    return true;
-  }else if(clickedButons[6] && clickedButons[7] && clickedButons[8]){
-    return true;
-  }else if(clickedButons[0] && clickedButons[3] && clickedButons[6]){
-    return true;
-  }else if(clickedButons[1] && clickedButons[4] && clickedButons[7]){
-    return true;
-  }else if(clickedButons[2] && clickedButons[5] && clickedButons[8]){
-    return true;
-  }else if(clickedButons[0] && clickedButons[4] && clickedButons[8]){
-    return true;
-  }else if(clickedButons[2] && clickedButons[4] && clickedButons[6]){
-    return true;
+    );
   }
-  return false;
-}
+  
+  isBingo(clickedButons: Array<boolean>): boolean {
+    if(clickedButons[0] && clickedButons[1] && clickedButons[2]){
+      return true;
+    }else if(clickedButons[3] && clickedButons[4] && clickedButons[5]){
+      return true;
+    }else if(clickedButons[6] && clickedButons[7] && clickedButons[8]){
+      return true;
+    }else if(clickedButons[0] && clickedButons[3] && clickedButons[6]){
+      return true;
+    }else if(clickedButons[1] && clickedButons[4] && clickedButons[7]){
+      return true;
+    }else if(clickedButons[2] && clickedButons[5] && clickedButons[8]){
+      return true;
+    }else if(clickedButons[0] && clickedButons[4] && clickedButons[8]){
+      return true;
+    }else if(clickedButons[2] && clickedButons[4] && clickedButons[6]){
+      return true;
+    }
+    return false;
+  }
 
 }
 
