@@ -67,7 +67,7 @@ class GameBoard extends React.Component<{},BoardState> {
           {this.renderGameButton(7)}
           {this.renderGameButton(8)}
         </div>
-        <p> {this.state.isBingo? "bingo" : "ei ole"}</p>
+        <p> {this.state.isBingo? "BINGO" : ""}</p>
       </div>
     );
   }
