@@ -1,12 +1,15 @@
 import React from 'react';
 import './App.css';
 import GameBoard from './GameBoard';
+import CloudamiteTop from './CloudamiteTop';
 
 function App() {
   return (
-    <div className="Kirosanabingo">
-       
-      <GameBoard />
+    <div className="kissa">
+      <div className="Kirosanabingo">
+         <CloudamiteTop />
+         <GameBoard />
+      </div>
     </div>
   );
 }
