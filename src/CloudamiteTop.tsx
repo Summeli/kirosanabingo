@@ -1,17 +1,17 @@
 import React, { Component, MouseEvent } from 'react';
-import logor from "./img/logo-yellow-right.png"; // Tell webpack this JS file uses this image
-import logol from "./img/logo-yellow-left.png"; // Tell webpack this JS file uses this image
+import logoright from "./img/clouda-logo-right.png"; // Tell webpack this JS file uses this image
+import logoline from "./img/logo-line.png"; // Tell webpack this JS file uses this image
 
 class CloudamiteTop extends React.Component {
 
     render() {
         return(
-            <div className="cloudamite-logo-top">
+            <div className="cloudamite-logo-footer">
                   <div className="logo-top-left">
-                    '  <img src={logol} alt="Logol" />;
+                    <img src={logoline} alt="Logol" />;
                   </div>
                   <div className="logo-top-right">
-                  <img src={logor} alt="Logo" />; 
+                  <img src={logoright} alt="Logol"/>
                   </div>
         </div>
       );

@@ -16,17 +16,17 @@ code {
 
 .cloudamite-logo-top{
   background-color:transparent;
-  height: 48px;
+  height: 50px;
   position:relative;
   overflow:hidden;
   white-space: nowrap;
-  max-width: 800px;
+  max-width: 1000px;
 }
 .logo-top-left{
-  height: 48px;
+  height: 50px;
   display: inline-block;
   overflow: hidden;
-  background-color: transparent;
+  background-color: black;
 }
 .logo-top-left#img{
   width:100%;
@@ -34,7 +34,7 @@ code {
 }
 .logo-top-right{
   background-color:black;
-  height: 48px;
+  height: 50px;
   display: inline;
   float: right;
   position:absolute;
@@ -45,6 +45,40 @@ code {
 .logo-top-right#img{
   width:100%
 }
+
+.cloudamite-logo-footer{
+  background-color: transparent;
+  height: 50px;
+  position:relative;
+  overflow:hidden;
+  white-space: nowrap;
+  max-width: 1000px;
+}
+
+.logo-footer-left{
+  background-color:black;
+  height: 50px;
+  display: inline;
+  float: left;
+  position:absolute;
+  top:0;
+  left:0;
+}
+.logo-footer-left#img{
+  width:100%;
+}
+.logo-footer-right{
+  height: 50px;
+  display: inline-block;
+  overflow: hidden;
+  background-color: black;
+}
+
+.logo-footer-right#img{
+  width:100%;
+  display: block;
+}
+
 .notPressedGamebutton{
   z-index: 1;
   border-color: rgb(247, 214, 72);
