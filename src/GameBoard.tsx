@@ -56,22 +56,22 @@ class GameBoard extends React.Component<{},BoardState> {
 
   render() {
       return(
-          <div>
+          <div className="gameboard">
+            <div className="board-row">
+              {this.renderGameButton(0)}
+              {this.renderGameButton(1)}
+              {this.renderGameButton(2)}
+            </div>
           <div className="board-row">
-          {this.renderGameButton(0)}
-          {this.renderGameButton(1)}
-          {this.renderGameButton(2)}
-        </div>
-        <div className="board-row">
-          {this.renderGameButton(3)}
-          {this.renderGameButton(4)}
-          {this.renderGameButton(5)}
-        </div>
-        <div className="board-row">
-          {this.renderGameButton(6)}
-          {this.renderGameButton(7)}
-          {this.renderGameButton(8)}
-        </div>
+            {this.renderGameButton(3)}
+            {this.renderGameButton(4)}
+            {this.renderGameButton(5)}
+          </div>
+          <div className="board-row">
+            {this.renderGameButton(6)}
+            {this.renderGameButton(7)}
+            {this.renderGameButton(8)}
+          </div>
         <p> {this.state.isBingo? "BINGO" : ""}</p>
       </div>
     );

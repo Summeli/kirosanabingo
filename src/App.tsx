@@ -8,7 +8,9 @@ function App() {
   return (
       <div className="Kirosanabingo">
          <CloudamiteTop />
-         <GameBoard />
+         <div className="gamecontainer">
+            <GameBoard />
+         </div>
          <CloudamiteFooter />
       </div>
   );

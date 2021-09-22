@@ -47,6 +47,7 @@ code {
 }
 
 .cloudamite-logo-footer{
+  margin-top: 30px;
   background-color: transparent;
   height: 50px;
   position:relative;
@@ -77,6 +78,19 @@ code {
 .logo-footer-right#img{
   width:100%;
   display: block;
+}
+.gamecontainer{
+  background-color: transparent;
+  position:relative;
+  overflow:hidden;
+  white-space: nowrap;
+  max-width: 1000px;
+  margin-top: 30px;
+}
+.gameboard{
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
 }
 
 .notPressedGamebutton{
