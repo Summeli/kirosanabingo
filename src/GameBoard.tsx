@@ -9,8 +9,13 @@ interface BoardState {
 
 class GameBoard extends React.Component<{},BoardState> {
 
-  cursewords: Array<string> = ["Vittu","Jumalauta","Perhana","Saatana", "Hitsit", "Kulli",
-  "Hitto", "Perse", "Perkele"];
+  //thanks for wikipedia: https://fi.wikipedia.org/wiki/Suomen_kielen_kirosanat
+  cursewords: Array<string> = ["helkatti", "helkkari", "helkutti", "helskutti", "helvetti", "hemmetti", "hiisi", 
+    "hiivatti", "hitsi", "hitto", "jeesus", "jeeveli", "jessus", "jukolauta", "jukoliste", "jukra", "jukranpujut", "juku", 
+    "jumalauta", "juukeli", "juutas", "jösses", "kehno", "kehveli", "kirottu", "lempo", "pahus", "pakana", "pannahinen",
+     "paska", "peeveli", "peijakas", "pentele", "perhana", "perkele", "perkule", "permanto", "perse", "pirskatti",
+      "piru", "pirulauta", "raato", "riivattu", "ryökäle", "räkä", "saakeli", "saakuri", "saamari", "saasta", 
+      "saatana", "samperi", "syötävä", "turkanen", "täytinen", "vitjat", "vitsi", "vittu"];
 
   constructor({}){
     super({});
