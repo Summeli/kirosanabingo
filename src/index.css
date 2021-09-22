@@ -15,7 +15,7 @@ code {
 }
 
 .cloudamite-logo-top{
-  background-color: #eee;
+  background-color:transparent;
   height: 48px;
   position:relative;
   overflow:hidden;
@@ -26,14 +26,14 @@ code {
   height: 48px;
   display: inline-block;
   overflow: hidden;
-  background-color: salmon;
+  background-color: transparent;
 }
 .logo-top-left#img{
   width:100%;
   display: block;
 }
 .logo-top-right{
-  background-color: yellow;
+  background-color:black;
   height: 48px;
   display: inline;
   float: right;
