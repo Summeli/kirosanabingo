@@ -5,14 +5,13 @@ import logol from "./img/logo-yellow-left.png"; // Tell webpack this JS file use
 class CloudamiteTop extends React.Component {
 
     render() {
-
         return(
             <div className="cloudamite-logo-top">
                   <div className="logo-top-left">
-                  <img src={logol} alt="Logol" />;
+                    '  <img src={logol} alt="Logol" />;
                   </div>
                   <div className="logo-top-right">
-                  <img src={logor} alt="Logo" />;
+                  <img src={logor} alt="Logo" />; 
                   </div>
         </div>
       );

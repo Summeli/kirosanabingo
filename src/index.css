@@ -15,33 +15,31 @@ code {
 }
 
 .cloudamite-logo-top{
-  position: relative;
-  display: flex;                  /* establish flex container */
-  flex-direction: row;            /* default value; can be omitted */
-  flex-wrap: wrap;              /* default value; can be omitted */
-  justify-content: space-between;
+  background-color: #eee;
+  height: 48px;
+  position:relative;
+  overflow:hidden;
+  white-space: nowrap;
+  max-width: 800px;
 }
 .logo-top-left{
-  float: right;
+  height: 48px;
+  display: inline-block;
   overflow: hidden;
-  margin-top:40px;
-  border-style: hidden;
-  position: relative;
-  min-width: 10px;
-  flex:  10 10 auto;
+  background-color: salmon;
 }
 .logo-top-left#img{
   width:100%;
   display: block;
 }
 .logo-top-right{
+  background-color: yellow;
+  height: 48px;
+  display: inline;
   float: right;
-  border-style: hidden;
-  min-width: 500px;
-  position: relative;
-  flex:  1 1 600px;
-  background-color: white;
-
+  position:absolute;
+  top:0;
+  right:0;
 }
 
 .logo-top-right#img{

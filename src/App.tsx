@@ -5,12 +5,10 @@ import CloudamiteTop from './CloudamiteTop';
 
 function App() {
   return (
-    <div className="kissa">
       <div className="Kirosanabingo">
          <CloudamiteTop />
          <GameBoard />
       </div>
-    </div>
   );
 }
 
