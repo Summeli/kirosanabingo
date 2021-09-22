@@ -11,7 +11,7 @@ class CloudamiteTop extends React.Component {
                     <img src={logoline} alt="Logol" />;
                   </div>
                   <div className="logo-top-right">
-                  <img src={logoright} alt="Logol"/>
+                  <a href="https://cloudamite.com"><img src={logoright} alt="Logol"/></a>
                   </div>
         </div>
       );

@@ -8,7 +8,7 @@ class CloudamiteFooter extends React.Component {
         return(
             <div className="cloudamite-logo-footer">
                   <div className="logo-footer-left">
-                    <img src={logoleft} alt="Logol" />
+                    <a href="https://cloudamite.com"><img src={logoleft} alt="Logol" /></a>
                   </div>
                   <div className="logo-footer-right">
                   <img src={logoline} alt="Logol"/>
