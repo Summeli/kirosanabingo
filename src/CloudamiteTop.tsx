@@ -1,4 +1,4 @@
-import React, { Component, MouseEvent } from 'react';
+import React  from 'react';
 import logoright from "./img/clouda-logo-right.png"; // Tell webpack this JS file uses this image
 import logoline from "./img/logo-line.png"; // Tell webpack this JS file uses this image
 
