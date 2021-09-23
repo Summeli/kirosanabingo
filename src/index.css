@@ -14,37 +14,26 @@ code {
     monospace;
 }
 
-.cloudamite-logo-top{
+.cloudamite-slogan-top{
   background-color:transparent;
   height: 50px;
   position:relative;
-  top:0;
+  top:10px;
   overflow:hidden;
   white-space: nowrap;
+  display: flex;
+  justify-content: center;
   max-width: 1000px;
 }
-.logo-top-left{
+.cloudamite-slogan{
+  margin: 0 auto;
   height: 50px;
   display: inline-block;
   overflow: hidden;
   background-color: black;
 }
-.logo-top-left#img{
+.cloudamite-slogan#img{
   width:100%;
-  display: block;
-}
-.logo-top-right{
-  background-color:black;
-  height: 50px;
-  display: inline;
-  float: right;
-  position:absolute;
-  top:0;
-  right:0;
-}
-
-.logo-top-right#img{
-  width:100%
 }
 
 .cloudamite-logo-footer{
@@ -52,7 +41,7 @@ code {
   background-color: transparent;
   height: 50px;
   position:absolute;
-  bottom: 0;
+  bottom: 10px;
   overflow:hidden;
   white-space: nowrap;
   max-width: 1000px;
@@ -87,7 +76,7 @@ code {
   overflow:hidden;
   white-space: nowrap;
   max-width: 1000px;
-  margin-top: 30px;
+  margin-top: 60px;
 }
 .gameboard{
   margin-left: auto;
