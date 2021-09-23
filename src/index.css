@@ -254,3 +254,10 @@ code {
     height: 70px;
   }
 }
+
+@media only screen and (max-height: 400px) {
+    .cloudamite-logo-footer{
+      display: none;
+  }
+  
+}
