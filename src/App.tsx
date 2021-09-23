@@ -6,7 +6,7 @@ import CloudamiteFooter from './CloudamiteFooter';
 
 function App() {
   return (
-      <div className="Kirosanabingo">
+      <div className="kirosanabingo">
          <CloudamiteTop />
          <div className="gamecontainer">
             <GameBoard />

@@ -30,7 +30,7 @@ code {
   height: 50px;
   display: inline-block;
   overflow: hidden;
-  background-color: black;
+  background-color: transparent;
 }
 .cloudamite-slogan#img{
   width:100%;
