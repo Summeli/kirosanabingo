@@ -1,22 +1,24 @@
 {
   "files": {
-    "main.css": "/kirosanabingo/static/css/main.d5cb1c21.chunk.css",
-    "main.js": "/kirosanabingo/static/js/main.ef12fbc5.chunk.js",
-    "main.js.map": "/kirosanabingo/static/js/main.ef12fbc5.chunk.js.map",
-    "runtime-main.js": "/kirosanabingo/static/js/runtime-main.3b461a38.js",
-    "runtime-main.js.map": "/kirosanabingo/static/js/runtime-main.3b461a38.js.map",
-    "static/js/2.c0d52474.chunk.js": "/kirosanabingo/static/js/2.c0d52474.chunk.js",
-    "static/js/2.c0d52474.chunk.js.map": "/kirosanabingo/static/js/2.c0d52474.chunk.js.map",
-    "static/js/3.5d0f3940.chunk.js": "/kirosanabingo/static/js/3.5d0f3940.chunk.js",
-    "static/js/3.5d0f3940.chunk.js.map": "/kirosanabingo/static/js/3.5d0f3940.chunk.js.map",
+    "main.css": "/kirosanabingo/static/css/main.6cf2f7b4.chunk.css",
+    "main.js": "/kirosanabingo/static/js/main.f7cafeb7.chunk.js",
+    "main.js.map": "/kirosanabingo/static/js/main.f7cafeb7.chunk.js.map",
+    "runtime-main.js": "/kirosanabingo/static/js/runtime-main.99b6b853.js",
+    "runtime-main.js.map": "/kirosanabingo/static/js/runtime-main.99b6b853.js.map",
+    "static/js/2.6252353d.chunk.js": "/kirosanabingo/static/js/2.6252353d.chunk.js",
+    "static/js/2.6252353d.chunk.js.map": "/kirosanabingo/static/js/2.6252353d.chunk.js.map",
+    "static/js/3.1d2a0778.chunk.js": "/kirosanabingo/static/js/3.1d2a0778.chunk.js",
+    "static/js/3.1d2a0778.chunk.js.map": "/kirosanabingo/static/js/3.1d2a0778.chunk.js.map",
     "index.html": "/kirosanabingo/index.html",
-    "static/css/main.d5cb1c21.chunk.css.map": "/kirosanabingo/static/css/main.d5cb1c21.chunk.css.map",
-    "static/js/2.c0d52474.chunk.js.LICENSE.txt": "/kirosanabingo/static/js/2.c0d52474.chunk.js.LICENSE.txt"
+    "static/css/main.6cf2f7b4.chunk.css.map": "/kirosanabingo/static/css/main.6cf2f7b4.chunk.css.map",
+    "static/js/2.6252353d.chunk.js.LICENSE.txt": "/kirosanabingo/static/js/2.6252353d.chunk.js.LICENSE.txt",
+    "static/media/clouda-logo-left.db3a6646.png": "/kirosanabingo/static/media/clouda-logo-left.db3a6646.png",
+    "static/media/slogan.b8e4e56d.png": "/kirosanabingo/static/media/slogan.b8e4e56d.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.3b461a38.js",
-    "static/js/2.c0d52474.chunk.js",
-    "static/css/main.d5cb1c21.chunk.css",
-    "static/js/main.ef12fbc5.chunk.js"
+    "static/js/runtime-main.99b6b853.js",
+    "static/js/2.6252353d.chunk.js",
+    "static/css/main.6cf2f7b4.chunk.css",
+    "static/js/main.f7cafeb7.chunk.js"
   ]
 }
