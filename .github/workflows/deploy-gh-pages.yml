@@ -9,15 +9,13 @@ jobs:
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v2
-     - name: Install Node.js
+
+      - name: Nodejs
         uses: actions/setup-node@v2
-          with:
-            node-version: '14'
-      - name: Cache Dependencies
-        uses: actions/cache@v2
-          with:
-            path: '**/node_modules'
-            key: ${{ runner.os }}-${{ hashFiles('**/yarn.lock') }}
+        with:
+          node-version: 14
+          check-latest: true
+
       - name: Install Dependencies
         run: yarn install
       - name: Build Project
