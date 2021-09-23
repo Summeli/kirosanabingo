@@ -16,10 +16,10 @@ jobs:
           node-version: 14
           check-latest: true
 
-      - name: Install Dependencies
+      - name: Install Dependencies ✨
         run: yarn install
-      - name: Build Project
-        run: yarn build
+      - name: Build Project 💄
+        run: yarn run build
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
