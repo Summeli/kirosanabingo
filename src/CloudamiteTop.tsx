@@ -6,7 +6,7 @@ class CloudamiteTop extends React.Component {
 
     render() {
         return(
-            <div className="cloudamite-logo-footer">
+            <div className="cloudamite-logo-top">
                   <div className="logo-top-left">
                     <img src={logoline} alt="Logol" />;
                   </div>
