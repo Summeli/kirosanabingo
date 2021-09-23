@@ -7,7 +7,7 @@ class CloudamiteTop extends React.Component {
         return(
             <div className="cloudamite-slogan-top">
                   <div className="cloudamite-slogan">
-                    <img src={slogan} alt="blow your mind" />
+                    <a href="https://cloudamite.com"><img src={slogan} alt="blow your mind" /></a>
                   </div>
         </div>
       );
