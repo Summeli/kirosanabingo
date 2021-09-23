@@ -1,4 +1,4 @@
-import React, { Component, MouseEvent, useState } from 'react';
+import React, { Component } from 'react';
 
 interface Props {
     text: string;
@@ -9,10 +9,6 @@ interface Props {
 
 export class GameButton extends Component<Props> {
 
-  constructor(props: Props) {
-    super(props);
-  }
-    
     render() {
       return <button onClick = {this.props.onClick} id = {this.props.id as unknown as string}
         className= {this.props.isClicked ? "pressedGameButton" : "notPressedGamebutton"} 

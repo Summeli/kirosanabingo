@@ -1,4 +1,4 @@
-import React, { Component, MouseEvent } from 'react';
+import React from 'react';
 import GameButton from './GameButton';
 
 interface BoardState {
@@ -17,7 +17,7 @@ class GameBoard extends React.Component<{},BoardState> {
       "piru", "pirulauta", "raato", "riivattu", "ryökäle", "räkä", "saakeli", "saakuri", "saamari", "saasta", 
       "saatana", "samperi", "syötävä", "turkanen", "täytinen", "vitjat", "vitsi", "vittu"];
 
-  constructor({}){
+  constructor(){
     super({});
 
     this.state = {rcursewords: new Array(9), clickedButtons: new Array(9), isBingo: false};
