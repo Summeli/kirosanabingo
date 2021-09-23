@@ -45,6 +45,8 @@ code {
   overflow:hidden;
   white-space: nowrap;
   max-width: 1000px;
+  justify-content: center;
+  
 }
 
 .logo-footer-left{
