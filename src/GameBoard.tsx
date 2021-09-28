@@ -5,19 +5,20 @@ import {isBingo} from './BingoUtil'
 const GameBoard: React.FunctionComponent = () => {
 
   //thanks for wikipedia: https://fi.wikipedia.org/wiki/Suomen_kielen_kirosanat
-  let all_cursewords: Array<string> = ["helkatti", "helkkari", "helkutti", "helskutti", "helvetti", "hemmetti", "hiisi", 
+  const all_cursewords: Array<string> = ["helkatti", "helkkari", "helkutti", "helskutti", "helvetti", "hemmetti", "hiisi", 
     "hiivatti", "hitsi", "hitto", "jeesus", "jeeveli", "jessus", "jukolauta", "jukoliste", "jukra", "jukranpujut", "juku", 
     "jumalauta", "juukeli", "juutas", "jösses", "kehno", "kehveli", "kirottu", "lempo", "pahus", "pakana", "pannahinen",
      "paska", "peeveli", "peijakas", "pentele", "perhana", "perkele", "perkule", "permanto", "perse", "pirskatti",
       "piru", "pirulauta", "raato", "riivattu", "ryökäle", "räkä", "saakeli", "saakuri", "saamari", "saasta", 
       "saatana", "samperi", "syötävä", "turkanen", "täytinen", "vitjat", "vitsi", "vittu"];
 
+    let remaining_cursewords = all_cursewords;
      //Randomize cursewords into the stateobject
     let rcursewords = new Array<string>(9);
     for(let i=0; i<9; i++){
-      let rndPos: number = Math.floor(Math.random() * Math.floor(all_cursewords.length));
-      rcursewords[i] = all_cursewords[rndPos];
-      all_cursewords.splice(rndPos,1);
+      let rndPos: number = Math.floor(Math.random() * Math.floor(remaining_cursewords.length));
+      rcursewords[i] = remaining_cursewords[rndPos];
+      remaining_cursewords.splice(rndPos,1);
     }
 
     const [cursewords, setcursewords] = useState<Array<string>>(rcursewords);
@@ -43,6 +44,17 @@ const GameBoard: React.FunctionComponent = () => {
         );
   };
 
+  const newBingoSheet = (e :React.MouseEvent<HTMLButtonElement>) => {
+    let remaining_cursewords = all_cursewords;
+    let new_cursewords = new Array<string>(9);
+    for(let i=0; i<9; i++){
+      let rndPos: number = Math.floor(Math.random() * Math.floor(remaining_cursewords.length));
+      new_cursewords[i] = remaining_cursewords[rndPos];
+      remaining_cursewords.splice(rndPos,1);
+    }
+    setcursewords(new_cursewords);
+  };
+
   return(
       <div className="gameboard">
         <div className="board-row">
@@ -60,7 +72,11 @@ const GameBoard: React.FunctionComponent = () => {
         {renderGameButton(7)}
         {renderGameButton(8)}
       </div>
-    <p> {bingo? "BINGO" : ""}</p>
+      {bingo ? ( <p>BINGO</p>) : (<p><br></br></p> ) }
+    <div className="extrabuttoncontainer">
+      <button onClick = {newBingoSheet} className= "newBingoSheetButton">uusi kuponki</button>
+    </div>
+
   </div>
 );
 

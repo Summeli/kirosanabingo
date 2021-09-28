@@ -1,8 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:regular,bold,italic&subset=latin,latin-ext');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Poppins';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: black;
@@ -87,13 +87,26 @@ code {
   width: 500px;
 }
 
+.extrabuttoncontainer {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.newBingoSheetButton{
+  width: 120px;
+  height: 70px;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  border-color: rgb(247, 214, 72);
+  font: Poppins;
+}
 .notPressedGamebutton{
   z-index: 1;
   border-color: rgb(247, 214, 72);
   background: rgb(0,0,0);
   color: rgb(255, 255, 255);
   outline: none;
-  font: poppins;
+  font: Poppins;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -108,7 +121,7 @@ code {
   background: rgb(0,0,0);
   color: rgb(255, 255, 255);
   outline: none;
-  font: poppins;
+  font: Poppins;
   text-align: center;
   text-decoration: none;
   display: inline-block;
