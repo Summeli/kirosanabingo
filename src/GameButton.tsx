@@ -7,14 +7,13 @@ interface Props {
     onClick: (ev: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
-export class GameButton extends Component<Props> {
+const GameButton: React.FunctionComponent<Props> = (props) => {
 
-    render() {
-      return <button onClick = {this.props.onClick} id = {this.props.id as unknown as string}
-        className= {this.props.isClicked ? "pressedGameButton" : "notPressedGamebutton"} 
-      >{this.props.text} 
-      </button>
-    }
+    return (<button onClick = {props.onClick} id = {props.id as unknown as string}
+      className= {props.isClicked ? "pressedGameButton" : "notPressedGamebutton"} 
+    >{props.text} 
+    </button>
+    );
   }
 
   export default GameButton;
