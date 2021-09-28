@@ -45,6 +45,7 @@ const GameBoard: React.FunctionComponent = () => {
   };
 
   const newBingoSheet = (e :React.MouseEvent<HTMLButtonElement>) => {
+    //reset everything
     let remaining_cursewords = all_cursewords;
     let new_cursewords = new Array<string>(9);
     for(let i=0; i<9; i++){
@@ -53,6 +54,8 @@ const GameBoard: React.FunctionComponent = () => {
       remaining_cursewords.splice(rndPos,1);
     }
     setcursewords(new_cursewords);
+    setClickedButtons(new Array<boolean>(9).fill(false));
+    setBingo(false);
   };
 
   return(
