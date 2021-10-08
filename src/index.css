@@ -17,13 +17,17 @@ code {
 .cloudamite-slogan-top{
   background-color:transparent;
   height: 50px;
-  position:relative;
+  position:fixed;
   top:10px;
   overflow:hidden;
   white-space: nowrap;
   display: flex;
   justify-content: center;
   max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto; 
+  right: 0;
+  left: 0;
 }
 .cloudamite-slogan{
   margin: 0 auto;
@@ -46,7 +50,10 @@ code {
   white-space: nowrap;
   max-width: 1000px;
   justify-content: center;
-  
+  margin-left: auto;
+  margin-right: auto; 
+  right: 0;
+  left: 0;
 }
 
 .logo-footer-left{
@@ -74,11 +81,15 @@ code {
 }
 .gamecontainer{
   background-color: transparent;
-  position:relative;
+  position:fixed;
   overflow:hidden;
   white-space: nowrap;
   max-width: 1000px;
-  margin-top: 60px;
+  margin-top: 120px;
+  margin-left: auto;
+  margin-right: auto; 
+  right: 0;
+  left: 0;
 }
 
 .gameboard{
