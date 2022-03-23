@@ -10,8 +10,22 @@ const App = () => {
 
    const options: any = {
       emitters: {
-        // ...
-      },
+         /*
+         startCount: 0,
+         position: { x: 50, y: 50 },
+         size: {
+           width: 0,
+           height: 0
+         },
+         rate: {
+           delay: 0,
+           quantity: 10
+         },
+         life: {
+           duration: 0,
+           count: 0
+         }*/
+       },
       particles: {
         number: {
           value: 200,
@@ -27,7 +41,7 @@ const App = () => {
           animation: {
             enable: true,
             minimumValue: 0,
-            speed: 0.7,
+            speed: 0.5,
             startValue: "max",
             destroy: "min",
           },
