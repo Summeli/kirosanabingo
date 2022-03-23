@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import GameButton from './GameButton';
 import {isBingo} from './BingoUtil'
-import { isPropertySignature } from 'typescript';
-
 
 interface Props {
   setBingo: (bingo: boolean) => void;
