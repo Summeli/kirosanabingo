@@ -1,8 +1,14 @@
 import React, { useState } from 'react';
 import GameButton from './GameButton';
 import {isBingo} from './BingoUtil'
+import { isPropertySignature } from 'typescript';
 
-const GameBoard: React.FunctionComponent = () => {
+
+interface Props {
+  setBingo: (bingo: boolean) => void;
+}
+
+const GameBoard: React.FunctionComponent<Props> = (props) => {
 
   //thanks for wikipedia: https://fi.wikipedia.org/wiki/Suomen_kielen_kirosanat
   const all_cursewords: Array<string> = ["helkatti", "helkkari", "helkutti", "helskutti", "helvetti", "hemmetti", "hiisi", 
@@ -31,6 +37,7 @@ const GameBoard: React.FunctionComponent = () => {
     clicks[id] = !clicks[id];
     //update state
     setBingo(isBingo(clicks));
+    props.setBingo(isBingo(clicks));
     setClickedButtons(clicks);
   };
 
