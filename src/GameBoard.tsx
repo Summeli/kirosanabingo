@@ -27,14 +27,11 @@ const GameBoard: React.FunctionComponent<Props> = (props) => {
 
     const [cursewords, setcursewords] = useState<Array<string>>(rcursewords);
     const [clickedButtons, setClickedButtons] = useState<Array<boolean>>(new Array(9));
-    const [bingo, setBingo] = useState<boolean>(false);
-
 
   const handleClick = (id: number) => {
     let clicks: Array<boolean> = clickedButtons.slice();
     clicks[id] = !clicks[id];
     //update state
-    setBingo(isBingo(clicks));
     props.setBingo(isBingo(clicks));
     setClickedButtons(clicks);
   };
@@ -60,7 +57,7 @@ const GameBoard: React.FunctionComponent<Props> = (props) => {
     }
     setcursewords(new_cursewords);
     setClickedButtons(new Array<boolean>(9).fill(false));
-    setBingo(false);
+    props.setBingo(false);
   };
 
   return(
@@ -80,7 +77,7 @@ const GameBoard: React.FunctionComponent<Props> = (props) => {
         {renderGameButton(7)}
         {renderGameButton(8)}
       </div>
-      {bingo ? ( <p>BINGO</p>) : (<p><br></br></p> ) }
+      <p><br></br></p>
     <div className="extrabuttoncontainer">
       <button onClick = {newBingoSheet} className= "newBingoSheetButton">uusi kuponki</button>
     </div>
