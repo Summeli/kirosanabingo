@@ -93,9 +93,12 @@ code {
 }
 
 .gameboard{
+  display: grid;
+  grid-template-columns: repeat(3, 120px);
+  grid-template-rows: repeat(3, 70px);
+  justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  width: 500px;
 }
 
 .extrabuttoncontainer {
@@ -106,56 +109,41 @@ code {
 .newBingoSheetButton{
   width: 120px;
   height: 70px;
+  margin: 0 auto;
   background-color: transparent;
   color: rgb(255, 255, 255);
   border-color: rgb(247, 214, 72);
-  font: Poppins;
+  font-family: Poppins;
 }
-.notPressedGamebutton{
-  z-index: 1;
+
+.gameButton {
   border-color: rgb(247, 214, 72);
   background: rgb(0,0,0);
   color: rgb(255, 255, 255);
-  outline: none;
-  font: Poppins;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
+  font-family: Poppins;
   font-size: 16px;
-  width: 150px;
-  height: 70px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
 }
 
-.pressedGameButton{
-  z-index: 1;
-  border-color: rgb(247, 214, 72);
-  background: rgb(0,0,0);
-  color: rgb(255, 255, 255);
-  outline: none;
-  font: Poppins;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  width: 150px;
-  height: 70px;
+.gameButton > * {
+  grid-row: 1;
+  grid-column: 1;
 }
 
-.pressedGameButton::after{
-  z-index: 2;
-  position: absolute;
-  margin-left: -100px;
-  margin-top: -20px;
-  content: 'X';
-  background: transparent;
+.gameButton > .gameButtonX {
+  display: none;
+}
+
+.pressedGameButton > .gameButtonX {
+  display: block;
+}
+
+.gameButtonX {
   color: rgb(247, 214, 72);
-  font: poppins-bold;
-  text-align: center;
-  text-decoration: none;
-  display: inline-table;
-  font-size: 50px;
-  width: 150px;
-  height: 70px;
+  font-weight: bold;
+  font-size: 40px;
 }
 
 @media only screen and (max-width: 500px) {
@@ -224,58 +212,6 @@ code {
     white-space: nowrap;
     max-width: 500px;
     margin-top: 60px;
-  }
-  .gameboard{
-    margin-left: auto;
-    margin-right: auto;
-    width: 500px;
-  }
-  
-  .notPressedGamebutton{
-    z-index: 1;
-    border-color: rgb(247, 214, 72);
-    background: rgb(0,0,0);
-    color: rgb(255, 255, 255);
-    outline: none;
-    font: poppins;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    width: 120px;
-    height: 70px;
-  }
-  
-  .pressedGameButton{
-    z-index: 1;
-    border-color: rgb(247, 214, 72);
-    background: rgb(0,0,0);
-    color: rgb(255, 255, 255);
-    outline: none;
-    font: poppins;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    width: 120px;
-    height: 70px;
-  }
-  
-  .pressedGameButton::after{
-    z-index: 2;
-    position: absolute;
-    margin-left: -100px;
-    margin-top: -20px;
-    content: 'X';
-    background: transparent;
-    color: rgb(247, 214, 72);
-    font: poppins-bold;
-    text-align: center;
-    text-decoration: none;
-    display: inline-table;
-    font-size: 50px;
-    width: 120px;
-    height: 70px;
   }
 }
 
