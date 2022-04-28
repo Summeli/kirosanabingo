@@ -37,13 +37,15 @@ const GameBoard: React.FunctionComponent<Props> = (props) => {
   };
 
   const renderGameButton = (i: number) => {
-      return (
-          <GameButton
-            text={cursewords[i]} isClicked={clickedButtons[i]} 
-            id = {i}
-            onClick = {() => handleClick(i)}
-          />
-        );
+    return (
+      <GameButton
+        text={cursewords[i]}
+        isClicked={clickedButtons[i]}
+        id={i}
+        key={i}
+        onClick={() => handleClick(i)}
+      />
+    );
   };
 
   const newBingoSheet = (e :React.MouseEvent<HTMLButtonElement>) => {
@@ -60,31 +62,21 @@ const GameBoard: React.FunctionComponent<Props> = (props) => {
     props.setBingo(false);
   };
 
-  return(
+  return (
+    <>
       <div className="gameboard">
-        <div className="board-row">
-          {renderGameButton(0)}
-          {renderGameButton(1)}
-          {renderGameButton(2)}
-        </div>
-      <div className="board-row">
-        {renderGameButton(3)}
-        {renderGameButton(4)}
-        {renderGameButton(5)}
+        {[0, 1, 2, 3, 4, 5, 6, 7, 8].map((index) => renderGameButton(index))}
       </div>
-      <div className="board-row">
-        {renderGameButton(6)}
-        {renderGameButton(7)}
-        {renderGameButton(8)}
+      <p>
+        <br></br>
+      </p>
+      <div className="extrabuttoncontainer">
+        <button onClick={newBingoSheet} className="newBingoSheetButton">
+          uusi kuponki
+        </button>
       </div>
-      <p><br></br></p>
-    <div className="extrabuttoncontainer">
-      <button onClick = {newBingoSheet} className= "newBingoSheetButton">uusi kuponki</button>
-    </div>
-
-  </div>
-);
-
-}
+    </>
+  );
+};
 
 export default GameBoard;
